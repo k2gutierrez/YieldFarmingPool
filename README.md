@@ -27,10 +27,10 @@ Users deposit their tokens into these distinct pools. As time progresses, the co
 ![Project Diagram](./images/diagram.png)
 
 ### Core Component File Paths
-[`YieldFarmingPool.sol`](./src/YieldFarmingPool.sol) — Core Staking, state management, and Reward Logic.
-[`AbiLibrary.sol`](./src/AbiLibrary.sol) — Complex DeFi Data Encoding Library for unique IDs and structures.
-[`MockToken.sol`](./src/MockToken.sol) — ERC20 Token Mock implementation for isolated testing environments.
-[`YieldScript.s.sol`](./script//YieldScript.s.sol) — Automated deployment and environment scripting.
+* [`YieldFarmingPool.sol`](./src/YieldFarmingPool.sol) — Core Staking, state management, and Reward Logic.
+* [`AbiLibrary.sol`](./src/AbiLibrary.sol) — Complex DeFi Data Encoding Library for unique IDs and structures.
+* [`MockToken.sol`](./src/MockToken.sol) — ERC20 Token Mock implementation for isolated testing environments.
+* [`YieldScript.s.sol`](./script//YieldScript.s.sol) — Automated deployment and environment scripting.
 
 ## 💻 Technical Docs
 The primary interaction points for users are stake, withdraw, and claimRewards. The contract ensures that state is meticulously updated before any external transfers occur, adhering strictly to the Checks-Effects-Interactions pattern.
